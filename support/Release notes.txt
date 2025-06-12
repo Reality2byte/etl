@@ -1,4 +1,38 @@
 ﻿===============================================================================
+20.41.7
+
+Fixes:
+Fixed std::string_view include warning for < C++17
+#1123 Bug: Possible NULL Pointer Dereference in set.h 
+#1124 alignment.h won't compile as C++03
+#1125 For cogapp, use cog instead of python
+
+
+===============================================================================
+20.41.6
+
+Updates:
+Further optimisation of etl::basic_string::insert by using etl::mem_move()
+Used mem_copy and mem_move to optimise vectors of pointers
+Added C++23 Preview configuration to VS2022 project
+
+Fixes:
+Fixed tuple const&& move constructors
+Fixed usage of structured bindings for tuple, when not using the STL
+Disable std::tuple_index and std::tuple_element forward declarations for MacOS and Clang
+#1119 Forced compiler error in nth_type.h breaks containers for C++03
+
+Pull Requests:
+#1116 Fix forward in tuple ctor
+#1122 Add Newline at end of Span
+
+===============================================================================
+20.41.5
+
+Pull Requests:
+#1115 Conditionally use wchar.h
+
+===============================================================================
 20.41.4
 
 Updates:
